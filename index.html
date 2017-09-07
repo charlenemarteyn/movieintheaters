@@ -42,14 +42,14 @@
         json.forEach(function(movie){
 
             let clone = template.cloneNode(true);
-            clone.querySelector("h3").textContent = movie.title;
-            clone.querySelector(".genre").textContent = movie.movieGenre;
-            clone.querySelector(".duration").textContent = movie.duration;
-            clone.querySelector(".description").textContent = movie.description;
-            clone.querySelector(".origin").textContent = movie.origin;
-            clone.querySelector(".release").textContent = movie.release;
-            clone.querySelector(".director").textContent = movie.director;
-            clone.querySelector(".mainactors").textContent = movie.mainactors;
+            clone.querySelector("h3").textContent = "Title: " + movie.title;
+            clone.querySelector(".genre").textContent = "Movie genre(s): " + movie.movieGenre;
+            clone.querySelector(".duration").textContent = "Duration: " + movie.duration;
+            clone.querySelector(".description").textContent = "Description: " + movie.description;
+            clone.querySelector(".origin").textContent = "Origin: " + movie.origin;
+            clone.querySelector(".release").textContent = "Released date: " + movie.release;
+            clone.querySelector(".director").textContent = "Director: " + movie.director;
+            clone.querySelector(".mainactors").textContent = "Main actors: " + movie.mainactors;
 
             article.appendChild(clone);
         })

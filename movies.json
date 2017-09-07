@@ -1,45 +1,45 @@
 [
     {
         "title" : "It",
-        "movieGenre" : ["Drama","Horror"],
+        "movieGenre" : ["Drama"," Horror"],
         "duration" : "2h 15min ",
         "description" : "A group of bullied kids band together when a monster, taking the appearance of a clown, begins hunting children.",
         "origin" : "USA",
         "release" : "8 September 2017",
         "director" : "Andy Muschietti",
-        "mainactors" : ["Bill Skarsgård", "Jaeden Lieberther", "Finn Wolfhard"]
+        "mainactors" : ["Bill Skarsgård", " Jaeden Lieberther", " Finn Wolfhard"]
     },
 
     {
         "title" : "Home Again",
-        "movieGenre" : ["Comedy","Drama", "Romance"],
+        "movieGenre" : ["Comedy"," Drama", " Romance"],
         "duration" : "1h 37min ",
         "description" : "Life for a single mom in Los Angeles takes an unexpected turn when she allows three young guys to move in with her.",
         "origin" : "USA",
         "release" : "8 September 2017",
         "director" : "Hallie Meyers-Shyer",
-        "mainactors" : ["Nat Wolff", "Reese Witherspoon", "Lake bell"]
+        "mainactors" : ["Nat Wolff", " Reese Witherspoon", " Lake bell"]
     },
 
     {
         "title" : "Rememory",
-        "movieGenre" : ["Drama","Mystery", "Sci-Fi"],
+        "movieGenre" : ["Drama"," Mystery", " Sci-Fi"],
         "duration" : "1h 51min ",
         "description" : "The widow of a wise professor stumbles upon one of his inventions that's able to record and play a person's memory.",
         "origin" : "USA",
         "release" : "24 August 2017",
         "director" : "Mark Palansky",
-        "mainactors" : ["Peter Dinklage", "Matt Ellis", "Jordana Largy"]
+        "mainactors" : ["Peter Dinklage", " Matt Ellis", " Jordana Largy "]
     },
 
     {
         "title" : "The Good Catholic",
-        "movieGenre" : ["Comedy","Drama"],
+        "movieGenre" : ["Comedy"," Drama"],
         "duration" : "1h 36min ",
         "description" : "Daniel loved his job as a small town priest more than anything. Then he met Jane. God help him.",
         "origin" : "USA",
         "release" : "24 August 2017",
         "director" : "Mark Palansky",
-        "mainactors" : ["Peter Dinklage", "Matt Ellis", "Jordana Largy"]
+        "mainactors" : ["Peter Dinklage", " Matt Ellis", " Jordana Largy"]
     }
 ]
