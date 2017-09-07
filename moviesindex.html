@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Exercise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <main>
+
+    <template class="movie">
+        <article>
+            <h3>Title</h3>
+            <p class="genre">Genre</p>
+            <p class="duration">Duration</p>
+            <h4 class="description">Description</h4>
+            <p class="origin">Origin</p>
+            <p class="release">Release Date</p>
+            <h5 class="director">Director</h5>
+            <h5 class="mainactors">Main Actors</h5>
+        </article>
+    </template>
+    </main>
+    <script>
+
+    let article = document.querySelector("main");
+    let moviesLink = "movies.json";
+    let template = document.querySelector('.movie').content;
+
+    function getData(link) {
+            fetch(link).then(function (response) {
+                return response.json();
+            }).then(function (json) {
+                return show(json);
+            })
+        }
+
+    function show(json){
+        console.log(moviesLink);
+        json.forEach(function(movie){
+
+            let clone = template.cloneNode(true);
+            clone.querySelector("h3").textContent = movie.title;
+            clone.querySelector(".genre").textContent = movie.movieGenre;
+            clone.querySelector(".duration").textContent = movie.duration;
+            clone.querySelector(".description").textContent = movie.description;
+            clone.querySelector(".origin").textContent = movie.origin;
+            clone.querySelector(".release").textContent = movie.release;
+            clone.querySelector(".director").textContent = movie.director;
+            clone.querySelector(".mainactors").textContent = movie.mainactors;
+
+            article.appendChild(clone);
+        })
+    }
+
+
+    getData(moviesLink);
+
+    </script>
+</body>
+</html>
